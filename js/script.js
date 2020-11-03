@@ -24,7 +24,7 @@ function display(title, description){
         document.getElementById("title").textContent = title;
     }
     document.getElementById("description").textContent = description;
-    var history = document.getElementById("history").textContent.substring(11);
+    var history = document.getElementById("history").textContent.substring(10);
     if (String(history).match(new RegExp(",", "g")) || [].length < 10){
         history = title + ", " + history;
     } else { 
